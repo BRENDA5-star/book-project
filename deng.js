@@ -1,4 +1,4 @@
-// Deng's code begins here
+
 for (let i = 0; i < localStorage.length; i++) {
     const dnb = JSON.parse(localStorage.getItem(Object.keys(localStorage)[i]))
     // bookdb.push(dnb)
@@ -27,10 +27,7 @@ function myFunction() {
     }
   }
   
-  // let goButton = document.getElementsByClassName('goButton')[0];
-  // goButton.addEventListener('click', (event) => {
-  //   window.location.href = `${window.location.origin}${event.currentTarget.innerHTML}`;
-  // })
+ 
 
 function filterBooksByCategory(category) {
     let books = books_db.filter((book) => book.category === category);
@@ -55,7 +52,6 @@ function filterBooksByCategory(category) {
       let category = document.createElement('p');
       let year = document.createElement('p');
       let publisher = document.createElement('p');
-      // console.log(books_category[i].title)
       title.innerHTML = books_category[i].title;
       author.innerHTML = books_category[i].author;
       category.innerHTML = books_category[i].category;
@@ -88,7 +84,7 @@ function filterBooksByCategory(category) {
   
       data.map(function (book) {
         return '<li>' +
-          `<img src=${book.image} height=300 width=200 >` + '<br/>' +
+          `<img src=${book.image} height=200 width=150 >` + '<br/>' +
           '<strong>Title: </strong>' + book.title + '<br/>' +
           '<strong>Year: </strong>' + book.year + '<br/>' +
           '<strong>Author: </strong>' + book.author + '<br/>' +
@@ -138,5 +134,4 @@ function filterBooksByCategory(category) {
   
   document.getElementById("search-btn").addEventListener('click', handleSearch);
   
-  // Deng's code ends here
-  // Deng's code ends here
+ 

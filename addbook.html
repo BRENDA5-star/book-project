@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Library Project</title>
-<link rel="stylesheet" href="./styles.css">
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/ca43e653c4.js"
-crossorigin="anonymous"></script>
-<!-- <script src="main.js"></script> -->
-
-<style>
-    form {
-        padding-left: 20px;
-        margin-right: 46%;
-        margin-top: 30px;
-    }
-
-    p {
-        padding-left: 20px;
-    }
-</style>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ca43e653c4.js" crossorigin="anonymous"></script>
+   
+</head>
 <body>
-     <!--------------------------------brenda code
-start--------------------------------------------------------------------->
+
+
+     <header>
+
+     <div class="logo"><a href="#">DBN Library</a></div>  
+     
+    
+     <div id="search-books">
+      <input type="text" name="search" id="search" >
+      <button id="search-btn" name="search_btn">Search</button>
+    </div>
+
+     <div class="heading">  
+       <ul> 
+         <li><a href="addbook.html" class="under">ADD BOOKS</a></li>  
+       </ul>  
+     </div>
+
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
+        <div id="myDropdown" class="dropdown-content">
+          
+          <p onclick="loadBooks('Arts and Entertainment')">Arts and Entertainment </p>
+          <p onclick="loadBooks('Business')">Business </p>
+          <p onclick="loadBooks('Literature')">Literature</p>
+          <p onclick="loadBooks('Science and Technology')">Science and Technology</p>
+          <p class="goButton"></p>
+        </div>
+        
+     
+ 
+  </header>
+
+  
+   <!-- Deng code ends Here-->
     <a href="index.html">Return to home</a>
 
     <!----------------add book------------------>
@@ -132,7 +152,40 @@ col-form-label">ISBN</label>
     <script src="Books_Database.js"></script>
     <script src="main.js"></script>
     
- <!--------------------------------brenda code
-start--------------------------------------------------------------------->
+ <!-- Nick's code-->
+<footer class="footer">
+    <div class="inner-footer">
+        <div class="social-links">
+            <ul>
+                <li class="social-items"><a href="#"><i
+class="fa-brands fa-facebook"></i></a></li>
+                <li class="social-items"><a href="#"><i
+class="fa-brands fa-square-twitter"></i></a></li>
+                <li class="social-items"><a href="#"><i
+class="fa-brands fa-instagram"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div class="quick-links">
+            <ul>
+              <li class="quick-items"><a href="index.html">Home</a></li>
+              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\aboutus.html">About Us</a></li>
+              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\ContactUs.htmll">Contact Us</a></li>
+              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\Policies.html">Policies</a></li>
+              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\Help.html">Help</a></li>
+              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\feedback.html">Feedback</a></li>
+              <!-- <li class="quick-items"><a href="../footer-links/Services.html">Services</a></li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="outter-footer">
+        DBN Library <br><br><br> Copyright &copy; D-B-N Web Dev. All
+Rights Reserved
+    </div>
+</footer>
+
+<!-- Nick's code-->
 </body>
 </html>

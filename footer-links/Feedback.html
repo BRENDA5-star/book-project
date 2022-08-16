@@ -1,96 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="https://kit.fontawesome.com/ca43e653c4.js" crossorigin="anonymous"></script>
-    <style>
-        body{
-            background-image: url("https://media.istockphoto.com/vectors/abstract-red-vector-background-with-stripes-vector-id1267149438?k=20&m=1267149438&s=612x612&w=0&h=ar5RFezr9qxzI7fOIcY2GJJ5ubr7D9xZMGvIhVfVAn8=") ;
-            background-repeat: no-repeat;
-            background-size: cover;
+    <title>Library Project</title>
+    <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ca43e653c4.js"
+crossorigin="anonymous"></script>
 
-        }
-    </style>
-</head>
 <body>
-    <header>
+    <!-- Deng Start Here -->
+  <header>
 
-        <div class="logo"><a href="#">DBN Library</a></div>  
-        
-        <div class="search">  
-          <a href=""><input type="text" placeholder="Search Books" id="input">  
-            <ion-icon class="s" name="search"></ion-icon>  
-          </a>  
+    <div class="logo"><a href="index.html">DBN Library</a></div>
+
+    <div class="search">
+      <a href=""><input type="text" placeholder="Search Books" id="input">
+        <ion-icon class="s" name="search"></ion-icon>
+      </a>
+    </div>
+
+    <div class="heading">
+      <ul>
+        <li><a href="addbook.html" class="under">ADD BOOKS</a></li>
+      </ul>
+    </div>
+
+
+   <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
+       <div id="myDropdown" class="dropdown-content">
+         <a href="business.html">Business</a>
+         <a href="sciencetech.html">Science and Technlogy</a>
+         <a href="fiction.html">Fiction</a>
+         <a href="healthfitness.html">Health and fitness</a>
+         <a href="literature.html">Literature</a>
+         <a href="biography.html">Biography</a>
+       </div>
+     </div>
+  </header>
+
+  <a href="index.html">Return to home</a>
+   <!-- Deng code ends Here-->
+   <h1 class="pageTitle">Libraries Inquiries / Feedback</h1>
+<p>This form is for general inquiries and feedback.</p>
+<p>For other immediate assistance, please see our Help page.</p>
+
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput"
+placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Email</label>
+    <input type="text" class="form-control"
+id="formGroupExampleInput2" placeholder="abc@gmail.com">
+  </div>
+
+  <div class="text section"><div class="form_row">
+    <div class="form_leftcol"><div class="form_leftcollabel"><label
+for="_content_dalhousie_en_home_libraries_about_contacts_libraries-general-inquiries_jcr_content_contentPar_start_comment">Please
+enter your comments here</label></div><div
+class="form_leftcolmark">&nbsp;</div></div>
+<div class="form_rightcol" id="comment_rightcol"><div
+id="comment_0_wrapper" class="form_rightcol_wrapper"><textarea
+class="form_field form_field_textarea"
+id="_content_dalhousie_en_home_libraries_about_contacts_libraries-general-inquiries_jcr_content_contentPar_start_comment"
+name="comment" rows="10" cols="100" onkeydown=""
+></textarea></div></div></div><div class="form_row_description"></div>
+</div>
+<div class="form-check mb-2 mr-sm-2">
+    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+    <label class="form-check-label" for="inlineFormCheck">
+      Remember me
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+
+<!-- Nick's code-->
+<footer class="footer">
+    <div class="inner-footer">
+        <div class="social-links">
+            <ul>
+                <li class="social-items"><a href="#"><i
+class="fa-brands fa-facebook"></i></a></li>
+                <li class="social-items"><a href="#"><i
+class="fa-brands fa-square-twitter"></i></a></li>
+                <li class="social-items"><a href="#"><i
+class="fa-brands fa-instagram"></i></a></li>
+
+            </ul>
         </div>
-   
-        <div class="heading">  
-          <ul> 
-            <li><a href="#" class="under">ADD BOOKS</a></li>  
-          </ul>  
+
+        <div class="quick-links">
+            <ul>
+              <li class="quick-items"><a href="../index.html">Home</a></li>
+              <li class="quick-items"><a href="../footer-links/aboutus.html">About Us</a></li>
+              <li class="quick-items"><a href="../footer-links/ContactUs.html">Contact Us</a></li>
+              <li class="quick-items"><a href="../footer-links/Policies.html">Policies</a></li>
+              <li class="quick-items"><a href="../footer-links/Help.html">Help</a></li>
+              <li class="quick-items"><a href="../footer-links/feedback.html">Feedback</a></li>
+              <!-- <li class="quick-items"><a href="../footer-links/Services.html">Services</a></li> -->
+            </ul>
         </div>
-   
-   
-       <div class="dropdown">
-           <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
-           <div id="myDropdown" class="dropdown-content">
-             <a href="#">Book 1</a>
-             <a href="#">Book 2</a>
-             <a href="#">Book 3</a>
-           </div>
-         </div>
-      </header>
-    <center><h1>Feedback</h1></center> <br><br>
+    </div>
 
+    <div class="outter-footer">
+        DBN Library <br><br><br> Copyright &copy; D-B-N Web Dev. All
+Rights Reserved
+    </div>
+</footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      
-    <footer class="footer">
-      <div class="inner-footer">
-          <div class="social-links">
-              <ul>
-                  <li class="social-items"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                  <li class="social-items"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-                  <li class="social-items"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                  
-              </ul>
-          </div>
-
-          <div class="quick-links">
-              <ul>
-                  <li class="quick-items"><a href="../index.html">Home</a></li>
-                  <li class="quick-items"><a href="../footer-links/aboutus.html">About Us</a></li>
-                  <li class="quick-items"><a href="../footer-links/ContactUs.html">Contact Us</a></li>
-                  <li class="quick-items"><a href="../footer-links/Policies.html">Policies</a></li>>
-                  <li class="quick-items"><a href="../footer-links/Help.html">Help</a></li>
-                  <li class="quick-items"><a href="../footer-links/Feedback.html">Feedback</a></li>
-                  <li class="quick-items"><a href="../footer-links/Services.html">Services</a></li>
-              </ul>
-          </div>
-      </div>
-
-      <div class="outter-footer">
-        DBN Books <br> Copyright &copy; D-B-N Web Dev. All Rights Reserved         
-      </div>
-  </footer>
-    
+<!-- Nick's code-->
 </body>
 </html>

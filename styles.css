@@ -168,7 +168,7 @@ form{ padding-left: 20px;
   .image img{
     display: flex !important; 
     float: left;
-    width:  200px;
+    width:  150px;
     height: 300px;
     object-fit: cover;
   }
@@ -182,9 +182,8 @@ form{ padding-left: 20px;
   }
   
   .single_book{
-    background-color: aqua;
     border-radius: 2%;
-    height: 95%;
+    height: 150px;
     padding: 1em;
     margin: 0.5em;
   }

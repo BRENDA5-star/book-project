@@ -3,26 +3,10 @@
 
 
 
-
-
-
-
-/* ------------------------- Brenda code starts
-here--------------------------------------- */
-
-
 //stores items in the localStorage
 function book() { 
-  // var category = document.getElementById('category').value;
-  // var author = document.getElementById('author').value;
-  // var title = document.getElementById('title').value;
-  // var edition = document.getElementById('edition').value;
-  // var isbn = document.getElementById('isbn').value;
-  // var description = document.getElementById('description').value;
+ 
   var key = document.getElementById('key').value;
-
-
-
   let title1 = document.getElementById('title').value;
   let author1 = document.getElementById('author').value;
   let year1 = document.getElementById('year').value;
@@ -32,15 +16,6 @@ function book() {
 
 
 
-  // const book = {
-  //   CATEGORY: category,
-  //   AUTHOR: author,
-  //   TITLE: title,
-  //   DESCRIPTION: description,
-  //   ISBN: isbn,
-  //   EDITION: edition,
-
-  // }
 
 
   const book1 = {
@@ -53,14 +28,8 @@ function book() {
 
   }
 
-  // localStorage.setItem("error",book1)
+ 
   console.log(book1)
-  // bookdb.push(book)
-  // console.log(bookdb.length)
-  // window.localStorage.setItem(key, JSON.stringify(book));
-  //converting object to string
-
-
   books_db.push(book1)
   console.log(books_db.length)
   window.localStorage.setItem(key, JSON.stringify(book1));
@@ -90,7 +59,6 @@ for (let i = 0; i < localStorage.length; i++) {
   console.log(books_db)
 
 }
-/* ------------------------- Brenda code ends
-// here--------------------------------------- */
+
 
 
