@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-   
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="C:\Users\HP\Documents\GitHub\book-project\css\styles.css">
     <script src="https://kit.fontawesome.com/ca43e653c4.js" crossorigin="anonymous"></script>
     <style>
         body{
@@ -17,8 +16,45 @@
         
     </style>
 </head>
-<body>
 
+<body>
+  <header>
+
+    <div class="logo"><a href="#">DBN Library</a></div>
+
+
+    <div id="search-books">
+      <input type="text" name="search" id="search">
+      <button id="search-btn" name="search_btn">Search</button>
+    </div>
+    <br>
+    <div class="heading">
+      <ul>
+        <li><a href="addbook.html" class="under">ADD BOOKS</a></li>
+        <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\sigup.html"><i
+              class="fa-solid fa-address-card"></i>Sign-up</a></li>
+        <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\login form.html"><i
+              class="fa-solid fa-login"></i>Login</a></li>
+      </ul>
+    </div>
+
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
+      <div id="myDropdown" class="dropdown-content">
+
+        <p onclick="loadBooks('Arts and Entertainment')">Arts and Entertainment </p>
+        <p onclick="loadBooks('Business')">Business </p>
+        <p onclick="loadBooks('Literature')">Literature</p>
+        <p onclick="loadBooks('Science and Technology')">Science and Technology</p>
+        <p class="goButton"></p>
+      </div>
+
+    </div>
+
+
+
+  </header>
     <a href="../index.html">Return to home</a>
     <center><h1>About Us</h1></center> <br><br>
     <center><p>Hello and welcome to DBN Books Public Library. We are a public library established in the year 2022 serving the community of Ottawa but open to all
@@ -59,6 +95,7 @@
         DBN Books <br> Copyright &copy; D-B-N Web Dev. All Rights Reserved         
       </div>
   </footer>
-    
+  <script src="Books_Database.js"></script>
+  <script src="second.js"></script>
 </body>
 </html>

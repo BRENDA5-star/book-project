@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Project</title>
-    <link rel="stylesheet" href="css/styles.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/ca43e653c4.js" crossorigin="anonymous"></script>
-   
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Project</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/ca43e653c4.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
 
 
-     <header>
+    <header>
 
-     <div class="logo"><a href="#">DBN Library</a></div>  
-     
+        <div class="logo"><a href="#">DBN Library</a></div>
     
-     <div id="search-books">
-      <input type="text" name="search" id="search" >
-      <button id="search-btn" name="search_btn">Search</button>
-    </div>
-
-     <div class="heading">  
-       <ul> 
-         <li><a href="addbook.html" class="under">ADD BOOKS</a></li>  
-       </ul>  
-     </div>
-
-
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
-        <div id="myDropdown" class="dropdown-content">
-          
-          <p onclick="loadBooks('Arts and Entertainment')">Arts and Entertainment </p>
-          <p onclick="loadBooks('Business')">Business </p>
-          <p onclick="loadBooks('Literature')">Literature</p>
-          <p onclick="loadBooks('Science and Technology')">Science and Technology</p>
-          <p class="goButton"></p>
+    
+        <div id="search-books">
+          <input type="text" name="search" id="search">
+          <button id="search-btn" name="search_btn">Search</button>
         </div>
-        
-     
- 
-  </header>
-
-  
-   <!-- Deng code ends Here-->
+        <br>
+        <div class="heading">
+          <ul>
+            <li><a href="addbook.html" class="under">ADD BOOKS</a></li>
+            <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\sigup.html"><i
+                  class="fa-solid fa-address-card"></i>Sign-up</a></li>
+            <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\login form.html"><i
+                  class="fa-solid fa-login"></i>Login</a></li>
+          </ul>
+        </div>
+    
+    
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
+          <div id="myDropdown" class="dropdown-content">
+    
+            <p onclick="loadBooks('Arts and Entertainment')">Arts and Entertainment </p>
+            <p onclick="loadBooks('Business')">Business </p>
+            <p onclick="loadBooks('Literature')">Literature</p>
+            <p onclick="loadBooks('Science and Technology')">Science and Technology</p>
+            <p class="goButton"></p>
+          </div>
+    
+        </div>
+    
+    
+    
+      </header>
     <a href="index.html">Return to home</a>
-
-    <!----------------add book------------------>
     <h1>ADD BOOKS</h1>
     <form id="bookForm">
 
         <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label"
->Category</label>
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Category</label>
             <div class="col-sm-10">
                 <div class="col-sm-5">
                     <div class="input-group">
 
-                        <span class="input-group-addon"><span
-class="glyphicon glyphicon-folder-close"></span></span>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-folder-close"></span></span>
                         <select id='category' name="genre" class="form-control">
                             <option disabled>--Select Genre--</option>
                             <option value="Science and Technology">Science and Technology</option>
                             <option value="Business">Business</option>
                             <option value="Literature">Literature</option>
                             <option value="Arts and Entertainment">Arts</option>
-                            <!-- <option value="General">General</option> -->
+
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -85,8 +85,7 @@ class="glyphicon glyphicon-folder-close"></span></span>
             <label for="inputEmail3" class="col-sm-2
 col-form-label">Title</label>
             <div class="col-sm-10">
-                <input class="form-control" id="title"type="text"
-placeholder="Title">
+                <input class="form-control" id="title" type="text" placeholder="Title">
 
             </div>
         </div>
@@ -95,8 +94,7 @@ placeholder="Title">
             <label for="inputEmail3" class="col-sm-2
 col-form-label">Author</label>
             <div class="col-sm-10">
-                <input class="form-control" id="author"type="text"
-placeholder="Author">
+                <input class="form-control" id="author" type="text" placeholder="Author">
             </div>
         </div>
 
@@ -105,8 +103,7 @@ placeholder="Author">
             <label for="inputEmail3" class="col-sm-2
 col-form-label">Publication Year</label>
             <div class="col-sm-10">
-                <input type="date" name="date" value="" id="year"
-size="50" placeholder="Release Date Name"
+                <input type="date" name="date" value="" id="year" size="50" placeholder="Release Date Name"
                     class="form-control">
             </div>
         </div>
@@ -116,27 +113,17 @@ size="50" placeholder="Release Date Name"
             <label for="inputEmail3" class="col-sm-2
 col-form-label">Image URL</label>
             <div class="col-sm-10">
-                <textarea name="image" id="image"
-size="50" placeholder="image url"
-                    class="form-control"></textarea>
+                <textarea name="image" id="image" size="50" placeholder="image url" class="form-control"></textarea>
             </div>
         </div>
         </div>
 
-        <!-- <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-2
-col-form-label">ISBN</label>
-            <div class="col-sm-10">
-            <input class="form-control" type="text" id="isbn"placeholder="ISBN">
-            </div>
-        </div>
-    -->
-        <div class="form-group row"> 
+        <div class="form-group row">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Key</label>
             <div class="col-sm-10">
-            <input class="form-control" type="text" id="key"placeholder="">
+                <input class="form-control" type="text" id="key" placeholder="">
             </div>
-        </div> 
+        </div>
 
 
 
@@ -151,41 +138,47 @@ col-form-label">ISBN</label>
 
     <script src="Books_Database.js"></script>
     <script src="main.js"></script>
-    
- <!-- Nick's code-->
-<footer class="footer">
-    <div class="inner-footer">
-        <div class="social-links">
-            <ul>
-                <li class="social-items"><a href="#"><i
-class="fa-brands fa-facebook"></i></a></li>
-                <li class="social-items"><a href="#"><i
-class="fa-brands fa-square-twitter"></i></a></li>
-                <li class="social-items"><a href="#"><i
-class="fa-brands fa-instagram"></i></a></li>
 
-            </ul>
+
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="social-links">
+                <ul>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+                </ul>
+            </div>
+
+            <div class="quick-links">
+                <ul>
+                    <li class="quick-items"><a href="index.html">Home</a></li>
+                    <li class="quick-items"><a
+                            href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\aboutus.html">About
+                            Us</a></li>
+                    <li class="quick-items"><a
+                            href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\ContactUs.htmll">Contact
+                            Us</a></li>
+                    <li class="quick-items"><a
+                            href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\Policies.html">Policies</a>
+                    </li>
+                    <li class="quick-items"><a
+                            href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\Help.html">Help</a></li>
+                    <li class="quick-items"><a
+                            href="C:\Users\Labrador\Documents\GitHub\book-project\feedback.html">Feedback</a></li>
+
+                </ul>
+            </div>
         </div>
 
-        <div class="quick-links">
-            <ul>
-              <li class="quick-items"><a href="index.html">Home</a></li>
-              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\aboutus.html">About Us</a></li>
-              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\ContactUs.htmll">Contact Us</a></li>
-              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\Policies.html">Policies</a></li>
-              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\footer-links\Help.html">Help</a></li>
-              <li class="quick-items"><a href="C:\Users\Labrador\Documents\GitHub\book-project\feedback.html">Feedback</a></li>
-              <!-- <li class="quick-items"><a href="../footer-links/Services.html">Services</a></li> -->
-            </ul>
+        <div class="outter-footer">
+            DBN Library <br><br><br> Copyright &copy; D-B-N Web Dev. All
+            Rights Reserved
         </div>
-    </div>
-
-    <div class="outter-footer">
-        DBN Library <br><br><br> Copyright &copy; D-B-N Web Dev. All
-Rights Reserved
-    </div>
-</footer>
-
-<!-- Nick's code-->
+    </footer>
+    <script src="Books_Database.js"></script>
+  <script src="second.js"></script>
 </body>
+
 </html>

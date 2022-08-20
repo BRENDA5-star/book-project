@@ -1,112 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="https://kit.fontawesome.com/ca43e653c4.js" crossorigin="anonymous"></script>
-    <style>
-        body{
-            background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/dark-pink-background-template-design-04eeaaaf9ea63502ddd92ad5e20f8f3e_screen.jpg?ts=1561436711");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
-</head>
-<body>
-    <header>
 
-        <div class="logo"><a href="#">DBN Library</a></div>  
-        
-        <div class="search">  
-          <a href=""><input type="text" placeholder="Search Books" id="input">  
-            <ion-icon class="s" name="search"></ion-icon>  
-          </a>  
-        </div>
-   
-        <div class="heading">  
-          <ul> 
-            <li><a href="#" class="under">ADD BOOKS</a></li>  
-          </ul>  
-        </div>
-   
-   
-       <div class="dropdown">
-           <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
-           <div id="myDropdown" class="dropdown-content">
-             <a href="#">Book 1</a>
-             <a href="#">Book 2</a>
-             <a href="#">Book 3</a>
-           </div>
-         </div>
-      </header>
-      <a href="../index.html">Return to home</a>
-   
-    <div class="container">
-        <div class="contact-box">
-            <div class="left"></div>
-            <div class="right">
-                <h2>Contact Us</h2>
-                <input type="text" class="field" placeholder="Your Name">
-                <input type="email" class="field" placeholder="Your Email">
-                <input type="text" class="field" placeholder="Your Phone Number">
-                <textarea class="field area" placeholder="Message"></textarea>
-                <button class="btn">Send</button>
-            </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="C:\Users\HP\Documents\GitHub\book-project\css\styles.css">
+  <script src="https://kit.fontawesome.com/ca43e653c4.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/dark-pink-background-template-design-04eeaaaf9ea63502ddd92ad5e20f8f3e_screen.jpg?ts=1561436711");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <div class="logo"><a href="#">DBN Library</a></div>
+
+
+    <div id="search-books">
+      <input type="text" name="search" id="search">
+      <button id="search-btn" name="search_btn">Search</button>
+    </div>
+    <br>
+    <div class="heading">
+      <ul>
+        <li><a href="addbook.html" class="under">ADD BOOKS</a></li>
+        <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\sigup.html"><i
+              class="fa-solid fa-address-card"></i>Sign-up</a></li>
+        <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\login form.html"><i
+              class="fa-solid fa-login"></i>Login</a></li>
+      </ul>
     </div>
 
-    
 
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
+      <div id="myDropdown" class="dropdown-content">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      
-    <footer class="footer">
-      <div class="inner-footer">
-          <div class="social-links">
-              <ul>
-                  <li class="social-items"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                  <li class="social-items"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-                  <li class="social-items"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                  
-              </ul>
-          </div>
-
-          <div class="quick-links">
-              <ul>
-                <li class="quick-items"><a href="../index.html">Home</a></li>
-                <li class="quick-items"><a href="../footer-links/aboutus.html">About Us</a></li>
-                <li class="quick-items"><a href="../footer-links/ContactUs.html">Contact Us</a></li>
-                <li class="quick-items"><a href="../footer-links/Policies.html">Policies</a></li>
-                <li class="quick-items"><a href="../footer-links/Help.html">Help</a></li>
-                <li class="quick-items"><a href="../feedback.html">Feedback</a></li>
-             
-              </ul>
-          </div>
+        <p onclick="loadBooks('Arts and Entertainment')">Arts and Entertainment </p>
+        <p onclick="loadBooks('Business')">Business </p>
+        <p onclick="loadBooks('Literature')">Literature</p>
+        <p onclick="loadBooks('Science and Technology')">Science and Technology</p>
+        <p class="goButton"></p>
       </div>
 
-      <div class="outter-footer">
-        DBN Books <br> Copyright &copy; D-B-N Web Dev. All Rights Reserved         
+    </div>
+
+
+
+  </header>
+  <a href="../index.html">Return to home</a>
+
+  <div class="container">
+    <div class="contact-box">
+      <div class="left"></div>
+      <div class="right">
+        <h2>Contact Us</h2>
+        <input type="text" class="field" placeholder="Your Name">
+        <input type="email" class="field" placeholder="Your Email">
+        <input type="text" class="field" placeholder="Your Phone Number">
+        <textarea class="field area" placeholder="Message"></textarea>
+        <button class="btn">Send</button>
       </div>
+    </div>
+  </div>
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <footer class="footer">
+    <div class="inner-footer">
+      <div class="social-links">
+        <ul>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+        </ul>
+      </div>
+
+      <div class="quick-links">
+        <ul>
+          <li class="quick-items"><a href="../index.html">Home</a></li>
+          <li class="quick-items"><a href="../footer-links/aboutus.html">About Us</a></li>
+          <li class="quick-items"><a href="../footer-links/ContactUs.html">Contact Us</a></li>
+          <li class="quick-items"><a href="../footer-links/Policies.html">Policies</a></li>
+          <li class="quick-items"><a href="../footer-links/Help.html">Help</a></li>
+          <li class="quick-items"><a href="../feedback.html">Feedback</a></li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="outter-footer">
+      DBN Books <br> Copyright &copy; D-B-N Web Dev. All Rights Reserved
+    </div>
   </footer>
-    
+  <script src="Books_Database.js"></script>
+  <script src="second.js"></script>
 </body>
+
 </html>

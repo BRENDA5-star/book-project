@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Project</title>
+<link rel="stylesheet" href="C:\Users\HP\Documents\GitHub\book-project\css\styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/ca43e653c4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  <header>
+
+    <div class="logo"><a href="#">DBN Library</a></div>
+
+
+    <div id="search-books">
+      <input type="text" name="search" id="search">
+      <button id="search-btn" name="search_btn">Search</button>
+    </div>
+    <br>
+    <div class="heading">
+      <ul>
+        <li><a href="addbook.html" class="under">ADD BOOKS</a></li>
+        <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\sigup.html"><i
+              class="fa-solid fa-address-card"></i>Sign-up</a></li>
+        <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\login form.html"><i
+              class="fa-solid fa-login"></i>Login</a></li>
+      </ul>
+    </div>
+
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
+      <div id="myDropdown" class="dropdown-content">
+
+        <p onclick="loadBooks('Arts and Entertainment')">Arts and Entertainment </p>
+        <p onclick="loadBooks('Business')">Business </p>
+        <p onclick="loadBooks('Literature')">Literature</p>
+        <p onclick="loadBooks('Science and Technology')">Science and Technology</p>
+        <p class="goButton"></p>
+      </div>
+
+    </div>
+
+
+
+  </header>
+  <a href="C:\Users\HP\Documents\GitHub\book-project\index.html">Return to home</a>
+
+  <div id="contentHead">
+    <h1>Log In</h1>
+  </div>
+
+  <div id="contentBody">
+    <p>Please enter your email and password to access your DBN Library account.</p>
+
+    <form id="register" class="login olform" name="register" method="post">
+      <div class="formElement">
+        <div class="label">
+          <label for="username">Email</label>
+          <span class="smaller lighter"></span>
+          &mdash; <a class="forgot-email" href="">Forgot your email?</a>
+        </div>
+
+        <div class="input">
+          <input type="email" class="required" id="username" name="username" value="" placeholder="Email"
+            autocapitalize="off" autocorrect="off" />
+          <span class="invalid clearfix" htmlfor="username"></span>
+        </div>
+      </div>
+
+      <div class="formElement">
+        <div class="label"><label for="password">Password</label> <span class="smaller lighter"></span></div>
+        <div class="input">
+          <input type="password" class="required" placeholder="Password" id="password" name="password" value="" />
+          <span class="invalid clearfix" htmlfor="password"></span>
+        </div>
+      </div>
+
+      <div class="formElement">
+        <div class="input">
+          <input name="remember" type="checkbox" id="remember" />
+          <label for="remember" class="small">Remember me</label>
+        </div>
+      </div>
+
+      <input type="hidden" id="redirect" value="" name="redirect" />
+      <input type="hidden" id="debug_token" value="" name="debug_token" />
+
+      <div class="clearfix"></div>
+
+      <div class="formElement bottom">
+        <br />
+        <button value="Log In" type="submit" class="login-submit larger" name="login" title="Log In">Log In</button>
+      </div>
+      <div class="formElement">
+        <div class="label"></div>
+        <div class="input smaller"><a href="">Forgot your Password?</a>
+          <br /><br />
+          Not a member of DBN Library? <a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\sigup.html">Sign
+            up now</a>.
+        </div>
+      </div>
+    </form>
+  </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="inner-footer">
+      <div class="social-links">
+        <ul>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+        </ul>
+      </div>
+
+      <div class="quick-links">
+        <ul>
+          <li class="quick-items"><a href="../index.html">Home</a></li>
+          <li class="quick-items"><a href="../footer-links/aboutus.html">About Us</a></li>
+          <li class="quick-items"><a href="../footer-links/ContactUs.html">Contact Us</a></li>
+          <li class="quick-items"><a href="../footer-links/Policies.html">Policies</a></li>
+          <li class="quick-items"><a href="../footer-links/Help.html">Help</a></li>
+          <li class="quick-items"><a href="../footer-links/feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="outter-footer">
+      DBN Library <br><br><br> Copyright &copy; D-B-N Web Dev. All
+      Rights Reserved
+    </div>
+  </footer>
+  <script src="Books_Database.js"></script>
+  <script src="second.js"></script>
+</body>
+
+</html>

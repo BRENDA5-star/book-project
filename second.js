@@ -38,32 +38,24 @@ function filterBooksByCategory(category) {
     let toRemove = document.getElementById('toRemove');
     toRemove.remove();
     let books_category = filterBooksByCategory(category);
-    // console.log("books_category: " + books_category);
   
     let books_container = document.createElement('div');
     books_container.className = 'books_container';
   
     for (let i = 0; i < books_category.length; i++) {
-      let div = document.createElement("div");
+      let div = document.createElement("figure");
       div.className = 'single_book';
       let img = document.createElement('img');
-      let title = document.createElement('p');
-      let author = document.createElement('p');
-      let category = document.createElement('p');
-      let year = document.createElement('p');
-      let publisher = document.createElement('p');
+      let title = document.createElement('figcaption');
+      let author = document.createElement('figcaption');
+      let category = document.createElement('figcaption');
       title.innerHTML = books_category[i].title;
       author.innerHTML = books_category[i].author;
       category.innerHTML = books_category[i].category;
-      year.innerHTML = books_category[i].year;
-      publisher.innerHTML = books_category[i].publisher;
       img.src = books_category[i].image;
       div.appendChild(img);
       div.appendChild(title);
       div.appendChild(author);
-      div.appendChild(category);
-      div.appendChild(publisher);
-      div.appendChild(year);
       books_container.appendChild(div);
       document.getElementById("books").appendChild(books_container);
     }
@@ -84,12 +76,11 @@ function filterBooksByCategory(category) {
   
       data.map(function (book) {
         return '<li>' +
-          `<img src=${book.image} height=200 width=150 >` + '<br/>' +
+          `<img src=${book.image} height=150 width=150 >` + '<br/>' +
           '<strong>Title: </strong>' + book.title + '<br/>' +
-          '<strong>Year: </strong>' + book.year + '<br/>' +
           '<strong>Author: </strong>' + book.author + '<br/>' +
           '<strong>Category: </strong>' + book.category + '<br/>' +
-          '<strong>Publisher: </strong>' + book.publisher + '<br/>' +
+          
   
   
           '</li>';

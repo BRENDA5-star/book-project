@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Project</title>
+    <link rel="stylesheet" href="C:\Users\HP\Documents\GitHub\book-project\css\styles.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ca43e653c4.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+
+
+    <header>
+
+        <div class="logo"><a href="#">DBN Library</a></div>
+    
+    
+        <div id="search-books">
+          <input type="text" name="search" id="search">
+          <button id="search-btn" name="search_btn">Search</button>
+        </div>
+        <br>
+        <div class="heading">
+          <ul>
+            <li><a href="addbook.html" class="under">ADD BOOKS</a></li>
+            <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\sigup.html"><i
+                  class="fa-solid fa-address-card"></i>Sign-up</a></li>
+            <li><a href="C:\Users\HP\Documents\GitHub\book-project\footer-links\login form.html"><i
+                  class="fa-solid fa-login"></i>Login</a></li>
+          </ul>
+        </div>
+    
+    
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">COLLECTIONS</button>
+          <div id="myDropdown" class="dropdown-content">
+    
+            <p onclick="loadBooks('Arts and Entertainment')">Arts and Entertainment </p>
+            <p onclick="loadBooks('Business')">Business </p>
+            <p onclick="loadBooks('Literature')">Literature</p>
+            <p onclick="loadBooks('Science and Technology')">Science and Technology</p>
+            <p class="goButton"></p>
+          </div>
+    
+        </div>
+    
+    
+    
+      </header>
+
+    <a href="C:\Users\HP\Documents\GitHub\book-project\index.html">Return to home</a>
+
+    <div id="contentHead">
+        <h1>Sign Up</h1>
+        <p class="instruct">Complete the form below to create a new account.
+            <span class="attn remind">Each field is required</span>
+        </p>
+    </div>
+
+    <div id="contentBody">
+
+        <form class="olform create validate" name="signup" method="post" action="">
+
+
+
+
+            <div class="formElement">
+                <div class="label">
+                    <label for="emailAddr">Your email address</label>
+                </div>
+                <div class="input">
+                    <input class="required" id="emailAddr" type="text" name="email" value="" />
+                    <span class="invalid clearfix" id="emailAddrMessage"></span>
+                    <span class="sansserif smaller lighter">Email</span>
+                </div>
+            </div>
+
+            <div class="formElement">
+                <div class="label">
+                    <label for="username">choose a screen name</label>
+                    <span class="smaller lighter">Letters and numbers only please, and at least 3 characters.</span>
+                </div>
+                <div class="input">
+                    <input autocapitalize="off" class="required" id="username" type="text" name="username" value="" />
+                    <span class="invalid clearfix" id="usernameMessage"></span>
+                    <span class="sansserif smaller lighter"><span id="userUrl">screenname</span>
+                    </span>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="formElement">
+                <div class="label">
+                    <label for="password">Choose a password</label>
+                </div>
+                <div class="input">
+                    <input class="required" id="password" type="password" name="password" value="" />
+                    <span class="invalid clearfix" id="passwordMessage"></span>
+                    <span class="sansserif smaller lighter">Password</span>
+                </div>
+            </div>
+            <div class="formElement">
+                <div class="label">
+                    <label for="password2">Confirm password</label>
+                </div>
+                <div class="input">
+                    <input class="required" id="password2" type="password" name="password2" value="" />
+                    <span class="invalid clearfix" id="password2Message"></span>
+                    <span class="sansserif smaller lighter">confirm password</span>
+                </div>
+            </div>
+
+            <br />
+            <label>
+                <input id="ia_newsletter" type="checkbox" name="ia_newsletter" value="" /> Remember me
+            </label>
+
+            <hr />
+
+            <div class="formElement">
+                <div class="label smaller lighter">If you have security settings or privacy blockers installed, please
+                    disable them to see the reCAPTCHA.</div>
+                <div class="g-recaptcha" data-sitekey="6LeM2kcUAAAAAOT3o2Mmllf0NN_8LgWZC6oFCXSA"></div>
+                <div class="input">
+                </div>
+            </div>
+
+            <small>By signing up, you agree to the Terms of Service</a>.</small>
+
+            <div class="formElement bottom">
+                <br />
+                <button type="submit" name="signup" id="signup" class="larger">Sign Up</button>
+                <a href="javascript:history.go(-1);" class="smaller attn">Cancel</a>
+            </div>
+        </form>
+
+    </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="social-links">
+                <ul>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+                </ul>
+            </div>
+
+            <div class="quick-links">
+                <ul>
+                    <li class="quick-items"><a href="../index.html">Home</a></li>
+                    <li class="quick-items"><a href="../footer-links/aboutus.html">About Us</a></li>
+                    <li class="quick-items"><a href="../footer-links/ContactUs.html">Contact Us</a></li>
+                    <li class="quick-items"><a href="../footer-links/Policies.html">Policies</a></li>
+                    <li class="quick-items"><a href="../footer-links/Help.html">Help</a></li>
+                    <li class="quick-items"><a href="../footer-links/feedback.html">Feedback</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="outter-footer">
+            DBN Library <br><br><br> Copyright &copy; D-B-N Web Dev. All
+            Rights Reserved
+        </div>
+    </footer>
+
+    <script src="Books_Database.js"></script>
+    <script src="second.js"></script>
+</body>
+
+</html>

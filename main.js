@@ -1,8 +1,4 @@
 
-
-
-
-
 //stores items in the localStorage
 function book() { 
  
@@ -15,9 +11,6 @@ function book() {
   let image1 = document.getElementById('image').value;
 
 
-
-
-
   const book1 = {
     category: category1,
     author: author1,
@@ -28,7 +21,6 @@ function book() {
 
   }
 
- 
   console.log(book1)
   books_db.push(book1)
   console.log(books_db.length)
@@ -43,8 +35,6 @@ window.onload = function () {
     event.preventDefault()
     book()
   })
-
-  // document.getElementById("bookForm").onsubmit = book
 
 }
 
