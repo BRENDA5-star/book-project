@@ -1,0 +1,385 @@
+
+
+/* brenda code starts here */
+  /* brenda code starts here */
+  h1{
+    text-align: center;
+  }
+
+.input-group{
+width:600px;
+padding-right: 25px;
+}
+
+form{ padding-left: 20px;
+    margin-right: 46%;
+
+    }
+    p{ padding-left: 20px;
+    }
+
+
+    input[type=text] {
+        -webkit-transition: width 0.5s ease-in-out;
+        transition: width 0.5s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 80%;
+    }
+/* brenda code ends here */
+
+/* brenda code ends here */
+/* Deng Code starts here */
+ 
+*{  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+ header{  
+  display: flex !important;  
+  justify-content:space-evenly;  
+  align-items: center;  
+  height:150px;  
+  width:100%;  
+  background:black;  
+}  
+ .heading ul{  
+    display:flex;  
+}  
+ .logo a{  
+    color:white;  
+    transition-duration: 1s;  
+    font-weight: 800; 
+    font-size: 35px;  
+    text-decoration:none; 
+}  
+ .logo a:hover{  
+    color:rgb(240, 197, 6);  
+    transition-duration: 1s;  
+}  
+ .heading ul li{  
+    list-style: none;  
+}  
+ .heading ul li a{  
+    margin:5px;  
+    text-decoration: none;  
+    color:black;  
+    font-weight: 500;  
+    position:relative;  
+    color:white;  
+    margin:2px 14px;  
+    font-size: 18px;  
+    transition-duration: 1s;  
+}
+ .heading ul li a:active{  
+    color:red;  
+}  
+ .heading ul li a:hover{  
+    color:rgb(243, 168, 7);  
+    transition-duration: 1s;  
+}  
+ 
+ #input{  
+    height:30px;  
+    width:200px;  
+    text-decoration: none;  
+    border:0px;  
+    padding:5px; 
+    flex-shrink:2; 
+}  
+  
+ ion-icon{  
+    width:30px;  
+    height:30px;  
+    background-color: white;  
+    color:black;  
+}  
+ ion-icon:hover{  
+    cursor: pointer;  
+}  
+ .search a{  
+    display:flex; 
+    flex-wrap: nowrap;  
+}  
+ header a ion-icon{  
+    position:relative;  
+    right:3px;  
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  figure img{
+    display: flex ; 
+    width:  250px;
+    height: 300px;
+    
+  }
+
+
+  figure figcaption{
+    font-size:large;
+    font-style: oblique;
+    font: bolder;
+    
+  }
+  
+  .books_container{
+    display: flex ;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-left:100px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .single_book{
+
+    justify-content: space-evenly;
+    margin-top: 5px;
+    width:600px; 
+    height:600px;
+   margin-bottom: 150px;
+
+
+  }
+
+  .fa-solid fa-address-card{
+    font-size: 20px;
+  }
+ 
+  ul .sizeOfImage {
+    display: flex;
+    flex-direction: row;
+}
+  
+/* Deng's code ends here */
+      
+    
+  
+/* Nick code starts here */
+
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+}
+
+.social-links{
+    display: flex !important;
+    margin-bottom: 15px;
+}
+
+.social-links ul{
+    display: flex !important;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    padding: 10PX;
+}
+
+.social-items{
+    list-style: none;
+}
+
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: #6cccc6;
+}
+
+.quick-links{
+    display: flex !important;
+    width: 645px;
+    height: 100px;
+    margin: auto;
+    padding: 35px;
+}
+
+.quick-links ul{
+    display: flex !important;
+}
+
+.quick-items{
+    list-style: none;
+}
+
+.quick-items a{
+    text-decoration: none;
+     padding: 0px 15px; 
+    font-size: 14px;
+    color: white;
+    transition: all .25s;
+}
+
+.quick-items a:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.outter-footer{
+    padding: 12px;
+    font-size: 18px;
+    /* height: 65px; */
+    text-align: center;
+    color: white;
+    background-color: #3f3f3f;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.container:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("photo111.webp") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter:blur(50px)
+}
+
+
+
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left{
+    height: 100%;
+    background: url("photo111.webp") no-repeat center;
+    background-size: cover;
+}
+
+.right{
+    padding: 25px 40px;
+}
+
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+
+}
+
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2ecc71;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+}
+
+.btn:hover{
+    background-color: #27ae60;
+    cursor: pointer;
+}
+
+
+
+/* Nick's code ends here */
+
+
+
